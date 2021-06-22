@@ -11,7 +11,7 @@
     "dev": "ts-node src",
     "dev:debug": "node -r ts-node/register src",
     "build": "tsc",
-    "start": "node dist"
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "@types/i2c-bus": "^5.1.0",
